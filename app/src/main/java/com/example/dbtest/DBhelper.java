@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DBhelper extends SQLiteOpenHelper implements TextInterfac{
     static final String DATABASE_NAME = "testmemo.db";
-    public DBhelper(Context context,int version) {
+    public DBhelper(Context context,int version,String DATABASE_NAME) {
         super(context, DATABASE_NAME,null, version);
     }
 

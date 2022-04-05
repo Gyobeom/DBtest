@@ -11,7 +11,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity{
     static final String DATABASE_NAME = "testmemo.db";
-    TextInterfac textInterfac = new DBhelper(MainActivity.this,1);
+    TextInterfac textInterfac = new DBhelper(MainActivity.this,1,DATABASE_NAME);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

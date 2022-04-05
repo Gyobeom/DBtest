@@ -18,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextInterfac textInterfac = new DBhelper(MainActivity2.this,1);
+                TextInterfac textInterfac = new DBhelper(MainActivity2.this,1,DATABASE_NAME);
                 textInterfac.insert("2번째 액티비티에서 저장된 DB입니다.");
             }
         });
